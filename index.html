@@ -12,10 +12,14 @@
     <script>
       window.$docsify = {
         name: "JavaScript 笔记",
+        nameLink: "/",
         loadSidebar: true,
-        relativePath: true,
+        relativePath: false,
         subMaxLevel: 3,
-        homepage: "README.md"
+        homepage: "README.md",
+        alias: {
+          "/.*/_sidebar.md": "/_sidebar.md"
+        }
       };
     </script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@5"></script>
